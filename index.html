@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Tela de Cadastro de Cliente</title>
+    <link rel="stylesheet" type="text/css" href="css/exercicio.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/modal.css" />
+    <script src="js/exercicio.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <form method="get" name="frm-cli" id="frm-cli">
+            <fieldset>
+                <legend>Cadastro de clientes</legend>
+                <section>
+                    <label for="cod">Código</label>
+                    <input type="text" name="cod" id="cod" class="obrigatorio" autofocus/>
+                    <input type="checkbox" name="tipo" id="tipo" style="vertical-align: middle;"/>
+                    <label for="tipo">Empresa</label>
+                </section>
+                <section>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" class="obrigatorio" />
+                </section>
+                <section id="pode-esconder1">
+                    <label for="rg">RG</label>
+                    <input type="text" name="rg" id="rg" />
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" />
+                </section> 
+                <section id="pode-esconder2">
+                    <label for="ie">IE</label>
+                    <input type="text" name="ie" id="ie" />
+                    <label for="cnpj">CNPJ</label>
+                    <input type="text" name="cnpj" id="cnpj" />
+                </section> 
+                <section id="pode-esconder3">
+                    <label for="data">Data Nasc.</label>
+                    <input type="date" name="data" id="data" />
+                    <label for="sexo">Sexo</label>
+                    <select id="sexo">
+                        <option value="" default>Selecione um sexo</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                    </select>
+                    <label style="font-weight: bold;">29 anos</label>
+                </section>
+                <section>
+                    <label for="telefone">Telefone</label>
+                    <input type="text" name="telefone" id="telefone" class="obrigatorio" />
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" />
+                </section>
+                <section>
+                    <label for="endereco">Endereço</label>
+                    <input type="text" name="endereco" id="endereco" class="obrigatorio" />
+                </section>
+                <section>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="cidade" class="obrigatorio" />
+                </section>
+                <input type="reset" id="cancelar" value="Cancelar" />
+                <input type="submit" id="enviar" value="Enviar" />
+            </fieldset>
+        </form>
+        <div id="mensagem-modal">
+            <a href="#" id="close">Fechar</a>
+        </div>
+        <div id="sobreposicao"></div>
+    </div>
+</body>
+</html> 
